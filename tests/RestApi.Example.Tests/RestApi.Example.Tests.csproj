@@ -13,6 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\IMD.Cloud.API\RestApi.Example.csproj" />
+    <ProjectReference Include="..\..\src\RestApi.Example\RestApi.Example.csproj" />
   </ItemGroup>
 </Project>

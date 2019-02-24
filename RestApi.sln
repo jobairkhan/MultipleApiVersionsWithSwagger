@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Example.Tests", "tests\RestApi.Example.Tests\RestApi.Example.Tests.csproj", "{5D682E5C-B0E4-4C19-8381-D5F88E9A7BF7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Example", "src\IMD.Cloud.API\RestApi.Example.csproj", "{898AA08A-2543-4944-B53D-BC86D7E6CEA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Example", "src\RestApi.Example\RestApi.Example.csproj", "{898AA08A-2543-4944-B53D-BC86D7E6CEA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
