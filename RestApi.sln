@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48D1A225-C77B-43F9-BA15-1A84BDC4295F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{62EEE3CD-3BB2-4973-BE1F-E9CF8B9DABD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9904446D-D479-4942-85F3-F87415C9DDCA}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Example.Tests", "tests\RestApi.Example.Tests\RestApi.Example.Tests.csproj", "{5D682E5C-B0E4-4C19-8381-D5F88E9A7BF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Example", "src\IMD.Cloud.API\RestApi.Example.csproj", "{898AA08A-2543-4944-B53D-BC86D7E6CEA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D682E5C-B0E4-4C19-8381-D5F88E9A7BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D682E5C-B0E4-4C19-8381-D5F88E9A7BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D682E5C-B0E4-4C19-8381-D5F88E9A7BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D682E5C-B0E4-4C19-8381-D5F88E9A7BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898AA08A-2543-4944-B53D-BC86D7E6CEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898AA08A-2543-4944-B53D-BC86D7E6CEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898AA08A-2543-4944-B53D-BC86D7E6CEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898AA08A-2543-4944-B53D-BC86D7E6CEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D682E5C-B0E4-4C19-8381-D5F88E9A7BF7} = {62EEE3CD-3BB2-4973-BE1F-E9CF8B9DABD9}
+		{898AA08A-2543-4944-B53D-BC86D7E6CEA8} = {48D1A225-C77B-43F9-BA15-1A84BDC4295F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6BC1A95-35A8-4C8B-AE2F-4D2ECB272059}
+	EndGlobalSection
+EndGlobal
