@@ -12,7 +12,7 @@ namespace RestApi.Example.Utils.Swagger
         /// </summary>
         public SwaggerSettings()
         {
-            Name = "IMD.Cloud.API";
+            Name = "REST API Example";
             Info = new Info
             {
                 Title = "REST API Example",
