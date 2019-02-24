@@ -5,7 +5,7 @@
     using Microsoft.AspNetCore.Mvc.Testing;
     using Xunit;
 
-    public abstract class BasicTests : IClassFixture<WebApplicationFactory<Startup>>, IDisposable
+    public abstract class BasicTests : IClassFixture<WebApplicationFactory<Startup>>
     {
         private readonly WebApplicationFactory<Startup> factory;
 
@@ -17,11 +17,5 @@
         }
 
         protected HttpClient HttpClientInstance { get; private set; }
-
-        public void Dispose()
-        {
-            this.HttpClientInstance.Dispose();
-            this.factory.Dispose();
-        }
     }
 }

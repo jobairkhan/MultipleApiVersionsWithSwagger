@@ -10,7 +10,7 @@ namespace RestApi.Example.Controllers
     /// <summary>
     /// Controller to test api
     /// </summary>
-    [Route("v{version:apiVersion}/api/[controller]")]
+    [Route("v{version:apiVersion}/api/values")]
     [ApiVersion("2.1")]
     [ApiController]
     public class NewValuesController : ControllerBase

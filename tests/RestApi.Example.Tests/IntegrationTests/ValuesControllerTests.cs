@@ -13,9 +13,17 @@ namespace RestApi.Example.Tests.IntegrationTests
         }
 
         [Fact]
-        public async Task WhenCallValues_ThenTheResultIsOk()
+        public async Task CanCallV1()
         {
-            var response = await this.HttpClientInstance.GetAsync("/v2/values", CancellationToken.None);
+            var response = await this.HttpClientInstance.GetAsync("/v1/api/values", CancellationToken.None);
+
+            response.EnsureSuccessStatusCode();
+        }
+
+        [Fact]
+        public async Task CanCallV2()
+        {
+            var response = await this.HttpClientInstance.GetAsync("/v2.1/api/values", CancellationToken.None);
 
             response.EnsureSuccessStatusCode();
         }
