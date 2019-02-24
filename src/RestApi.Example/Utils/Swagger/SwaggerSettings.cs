@@ -15,8 +15,8 @@ namespace RestApi.Example.Utils.Swagger
             Name = "IMD.Cloud.API";
             Info = new Info
             {
-                Title = "IMD Cloud API",
-                Description = "Secure IMD Cloud API allowed OAuth2 flow",
+                Title = "REST API Example",
+                Description = "REST API Versions",
                 TermsOfService = "Please contact your service provider"
             };
         }
