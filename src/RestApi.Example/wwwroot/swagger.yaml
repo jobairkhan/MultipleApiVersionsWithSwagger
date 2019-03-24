@@ -1,0 +1,112 @@
+swagger: "2.0"
+info:
+  version: 2.1
+  title: Rest API
+  description: Swagger with API version, <a href='/swagger.yaml'>download swagger.yaml</a>
+  termsOfService: https://company.com/termsofservice
+  contact:
+    name: M J khan
+    url: https://support.company.com/helpdesk
+    email: m.j.khan@email.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+paths:
+  /v1/api/Values:
+    get:
+      tags:
+      - Values
+      summary: GET api/values
+      operationId: Get
+      consumes: []
+      produces: []
+      parameters: []
+      responses:
+        200:
+          description: Success
+    post:
+      tags:
+      - Values
+      summary: POST api/values
+      operationId: Post
+      consumes:
+      - application/json-patch+json
+      - application/json
+      - text/json
+      - application/*+json
+      produces: []
+      parameters:
+      - name: value
+        in: body
+        description: '[FromBody] string'
+        schema:
+          type: string
+      responses:
+        200:
+          description: Success
+  /v1/api/Values/{id}:
+    get:
+      tags:
+      - Values
+      summary: >-
+        GET api/values/5
+
+        here id is 5
+      operationId: Get
+      consumes: []
+      produces: []
+      parameters:
+      - name: id
+        in: path
+        description: int
+        required: true
+        type: integer
+        format: int32
+      responses:
+        200:
+          description: Success
+    put:
+      tags:
+      - Values
+      summary: PUT api/values/5
+      operationId: Put
+      consumes:
+      - application/json-patch+json
+      - application/json
+      - text/json
+      - application/*+json
+      produces: []
+      parameters:
+      - name: id
+        in: path
+        description: int
+        required: true
+        type: integer
+        format: int32
+      - name: value
+        in: body
+        description: string, [FromBody]
+        schema:
+          type: string
+      responses:
+        200:
+          description: Success
+    delete:
+      tags:
+      - Values
+      summary: DELETE api/values/5
+      operationId: DeleteAsync
+      consumes: []
+      produces: []
+      parameters:
+      - name: id
+        in: path
+        description: int
+        required: true
+        type: integer
+        format: int32
+      responses:
+        200:
+          description: Success
+definitions: {}
+

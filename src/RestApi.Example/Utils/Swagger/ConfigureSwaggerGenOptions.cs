@@ -36,6 +36,7 @@ namespace RestApi.Example.Utils.Swagger
         /// <inheritdoc />
         public void Configure(SwaggerGenOptions options)
         {
+            options.DocumentFilter<YamlDocumentFilter>();
             options.OperationFilter<SwaggerDefaultValues>();
             
             options.DescribeAllEnumsAsStrings();
