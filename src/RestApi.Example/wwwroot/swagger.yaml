@@ -1,112 +1,143 @@
-swagger: "2.0"
 info:
-  version: 2.1
   title: Rest API
   description: Swagger with API version, <a href='/swagger.yaml'>download swagger.yaml</a>
-  termsOfService: https://company.com/termsofservice
+  version: 2.1
+  termsOfService: &o0
+    absolutePath: /termsofservice
+    absoluteUri: *o0
+    localPath: /termsofservice
+    authority: company.com
+    hostNameType: Dns
+    isDefaultPort: true
+    pathAndQuery: /termsofservice
+    segments:
+    - /
+    - termsofservice
+    host: company.com
+    port: 443
+    query: ''
+    fragment: ''
+    scheme: https
+    originalString: *o0
+    dnsSafeHost: company.com
+    idnHost: company.com
+    isAbsoluteUri: true
+    userInfo: ''
   contact:
     name: M J khan
-    url: https://support.company.com/helpdesk
+    url: &o1
+      absolutePath: /helpdesk
+      absoluteUri: *o1
+      localPath: /helpdesk
+      authority: support.company.com
+      hostNameType: Dns
+      isDefaultPort: true
+      pathAndQuery: /helpdesk
+      segments:
+      - /
+      - helpdesk
+      host: support.company.com
+      port: 443
+      query: ''
+      fragment: ''
+      scheme: https
+      originalString: *o1
+      dnsSafeHost: support.company.com
+      idnHost: support.company.com
+      isAbsoluteUri: true
+      userInfo: ''
     email: m.j.khan@email.com
   license:
     name: MIT
-    url: https://opensource.org/licenses/MIT
+    url:
+      absolutePath: /licenses/MIT
+      absoluteUri: https://opensource.org/licenses/MIT
+      localPath: /licenses/MIT
+      authority: opensource.org
+      hostNameType: Dns
+      isDefaultPort: true
+      pathAndQuery: /licenses/MIT
+      segments:
+      - /
+      - licenses/
+      - MIT
+      host: opensource.org
+      port: 443
+      query: ''
+      fragment: ''
+      scheme: https
+      originalString: https://opensource.org/licenses/MIT
+      dnsSafeHost: opensource.org
+      idnHost: opensource.org
+      isAbsoluteUri: true
+      userInfo: ''
+servers: []
 paths:
-  /v1/api/Values:
-    get:
-      tags:
-      - Values
-      summary: GET api/values
-      operationId: Get
-      consumes: []
-      produces: []
-      parameters: []
-      responses:
-        200:
-          description: Success
-    post:
-      tags:
-      - Values
-      summary: POST api/values
-      operationId: Post
-      consumes:
-      - application/json-patch+json
-      - application/json
-      - text/json
-      - application/*+json
-      produces: []
-      parameters:
-      - name: value
-        in: body
-        description: '[FromBody] string'
-        schema:
-          type: string
-      responses:
-        200:
-          description: Success
-  /v1/api/Values/{id}:
-    get:
-      tags:
-      - Values
-      summary: >-
-        GET api/values/5
+  /v2.1/api/values:
+    operations:
+      Get:
+        tags:
+        - name: NewValues
+        summary: GET new api/values
+        parameters: []
+        responses:
+          200:
+            description: Success
+            headers: {}
+            content: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /v2.1/api/values/{id}:
+    operations:
+      Get:
+        tags:
+        - name: NewValues
+        summary: >-
+          GET api/values/5
 
-        here id is 5
-      operationId: Get
-      consumes: []
-      produces: []
-      parameters:
-      - name: id
-        in: path
-        description: int
-        required: true
-        type: integer
-        format: int32
-      responses:
-        200:
-          description: Success
-    put:
-      tags:
-      - Values
-      summary: PUT api/values/5
-      operationId: Put
-      consumes:
-      - application/json-patch+json
-      - application/json
-      - text/json
-      - application/*+json
-      produces: []
-      parameters:
-      - name: id
-        in: path
-        description: int
-        required: true
-        type: integer
-        format: int32
-      - name: value
-        in: body
-        description: string, [FromBody]
-        schema:
-          type: string
-      responses:
-        200:
-          description: Success
-    delete:
-      tags:
-      - Values
-      summary: DELETE api/values/5
-      operationId: DeleteAsync
-      consumes: []
-      produces: []
-      parameters:
-      - name: id
-        in: path
-        description: int
-        required: true
-        type: integer
-        format: int32
-      responses:
-        200:
-          description: Success
-definitions: {}
+          here id is 5
+        parameters:
+        - name: id
+          in: Path
+          description: int
+          required: true
+          schema:
+            type: integer
+            format: int32
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        responses:
+          200:
+            description: Success
+            headers: {}
+            content: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+components:
+  schemas: {}
+  responses: {}
+  parameters: {}
+  examples: {}
+  requestBodies: {}
+  headers: {}
+  securitySchemes: {}
+  links: {}
+  callbacks: {}
+securityRequirements: []
+tags: []
 
