@@ -1,4 +1,5 @@
-﻿using Swashbuckle.AspNetCore.Swagger;
+﻿using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace RestApi.Example.Utils.Swagger
 {
@@ -13,11 +14,10 @@ namespace RestApi.Example.Utils.Swagger
         public SwaggerSettings()
         {
             Name = "REST API Example";
-            Info = new Info
+            Info = new OpenApiInfo
             {
                 Title = "REST API Example",
-                Description = "REST API Versions",
-                TermsOfService = "Please contact your service provider"
+                Description = "REST API Versions"                
             };
         }
 
@@ -29,7 +29,7 @@ namespace RestApi.Example.Utils.Swagger
         /// <summary>
         /// Gets or sets swagger Info.
         /// </summary>
-        public Info Info { get; set; }
+        public OpenApiInfo Info { get; set; }
 
         /// <summary>
         /// Gets or sets RoutePrefix.
