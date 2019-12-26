@@ -38,8 +38,8 @@ namespace RestApi.Example
             services.Configure<SwaggerSettings>(Configuration.GetSection(nameof(SwaggerSettings)));
 
             services
-                .AddMvc()
-                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+                .AddMvc(options => options.EnableEndpointRouting = false)
+                .SetCompatibilityVersion(CompatibilityVersion.Latest);
 
             services
                 .AddApiVersionWithExplorer()
