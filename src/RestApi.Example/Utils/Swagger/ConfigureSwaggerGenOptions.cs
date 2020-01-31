@@ -39,7 +39,7 @@ namespace RestApi.Example.Utils.Swagger
             options.DocumentFilter<YamlDocumentFilter>();
             options.OperationFilter<SwaggerDefaultValues>();
             
-            options.DescribeAllEnumsAsStrings();
+            //options.DescribeAllEnumsAsStrings();
             options.IgnoreObsoleteActions();
             options.IgnoreObsoleteProperties();
 

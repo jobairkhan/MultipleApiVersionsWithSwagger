@@ -16,13 +16,13 @@ namespace RestApi.Example.Utils.Swagger
     /// </summary>
     public sealed class YamlDocumentFilter : IDocumentFilter
     {
-        private readonly IHostingEnvironment hostingEnvironment;
+        private readonly IWebHostEnvironment hostingEnvironment;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="YamlDocumentFilter"/> class.
         /// </summary>
         /// <param name="hostingEnvironment">IHostingEnvironment</param>
-        public YamlDocumentFilter(IHostingEnvironment hostingEnvironment)
+        public YamlDocumentFilter(IWebHostEnvironment hostingEnvironment)
         {
             this.hostingEnvironment = hostingEnvironment;
         }
